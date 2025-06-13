@@ -1,5 +1,5 @@
 #************************************** JOINS *****************************************************
-#A JOIN IS A CLAUSE WHICH USE TO COMBINE ROWS FROM 2 OR MORE TABLE BASED ON A RELATED COLUMN BETWEEN THEM 
+#A JOIN IS A CLAUSE WHICH USE TO COMBINE ROWS FROM 2 OR MORE TABLE BASED ON A CONDITION ON RELATED COLUMN BETWEEN THEM 
 
 #-**************************************** INNER JOIN ****************************************************
 #INNER JOIN = AND / INTERSECTION / COMMON IN TWO OR BOTH
@@ -16,6 +16,10 @@ SELECT *
 FROM student_details LEFT JOIN course_details
 ON student_details.COURSE_ID = course_details.COURSE_ID;
 
-
+#************************************** RIGHT JOIN*****************************
+#INNER JOIN + ALL THE TUPLES FROM RHT WHICH FAILED FOR THE INNER JOIN
+SELECT * 
+FROM student_details RIGHT JOIN course_details
+ON student_details.COURSE_ID = course_details.COURSE_ID;
 
 
