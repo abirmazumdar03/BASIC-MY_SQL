@@ -92,3 +92,29 @@ SELECT * FROM TABLE_2;
 INSERT INTO TABLE_2
 VALUE
 (current_date(),now(),current_timestamp());
+
+#*******************************************************************************************************
+-- DDL practice CREATE ,ALTER , DROP
+CREATE TABLE TABLE_3
+(DATE_TIME DATETIME DEFAULT NOW(),
+S_NAME VARCHAR(20),
+S_DOB DATE,
+PHONE BIGINT
+);
+
+SHOW TABLES;
+SHOW TABLE STATUS;
+
+# Adding Unique Constrain
+ALTER TABLE TABLE_2
+ADD CONSTRAINT
+UNIQUE (TODAY_DATE_TIME);
+
+
+# setting up check constraint
+ALTER TABLE TABLE_2
+ADD CONSTRAINT VALUE_CHECK CHECK (VALUE>=1000.00 AND VALUE<=9999.99);
+
+
+
+
