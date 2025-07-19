@@ -56,3 +56,13 @@ TABLE_1 AS B
 ON
 A.REFERAL_ID=B.REFERAL_ID;
 
+-- ************************************** CROSS JOIN ********************************************
+-- CROSS JOIN clause creates a Cartesian Product between the 2 or more same or of different tables
+-- If Table 1 has m Rows and A columns , And Table 2 has n rows and B columns
+-- then TABLE 1 CROSS JOIN TABLE 2 will have
+-- TOTAL ROWS = (m x n) , TOTAL COLUMNS = (A+B)
+
+SELECT * FROM EMPLOYEE;
+
+SELECT A.E_ID,A.DEPT,A.SALARY,B.E_ID,B.DEPT,B.SALARY
+FROM EMPLOYEE AS A CROSS JOIN EMPLOYEE AS B;
