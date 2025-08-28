@@ -71,6 +71,7 @@ FROM EMPLOYEE;
 -- Fetches the value from a previous row (relative to the current row).
 -- LAG(column_name, offset, default_value) OVER (PARTITION BY ... ORDER BY ...) OFFSET : HOW MANY ROWS BACK TO LOOK DEFAULT 1
 -- default_value: what to return if there is no previous row
+-- with LEAD(),LAG() one must specify ORDERY BY in the OVER clause
 
 SELECT EMP_ID,NAME,DEPT,
 LAG(SALARY,2) OVER (ORDER BY SALARY DESC) AS LAG_TEST
