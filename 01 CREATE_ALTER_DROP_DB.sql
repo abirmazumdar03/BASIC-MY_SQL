@@ -1,5 +1,5 @@
 #To create a new DB
-create database ADMISSION;
+create database IF NOT EXISTS ADMISSION;
 
 #Another Database creation
 create database passout;

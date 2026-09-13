@@ -4,7 +4,7 @@
 #MY-SQL NORMALLY SEARCHES SEQUENTALLY THROUGH A COLUMN
 -- The longer the column the more expensive the operation is
 -- UPDATE takes more time , SELECT takes less time
-
+USE ADMISSION;
 # to show the current indexes of a table
 SHOW INDEXES FROM student_details;
 #IT SHOWS THAT THERE'S AN EXITSING INDEX OVER THE PK OF THE TABLE

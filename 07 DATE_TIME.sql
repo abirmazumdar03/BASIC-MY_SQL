@@ -3,7 +3,7 @@
 #ACTIVATE THE DB
 USE ADMISSION;
 
-SELECT * FROM SAMPLE_TABLE;
+SELECT * FROM SAMPLE_TABLE;	
 
 #ADDING THREE COLUMNS TO THE TABLE  #DDL
 ALTER TABLE SAMPLE_TABLE
@@ -28,4 +28,8 @@ VALUES
 INSERT INTO SAMPLE_TABLE
 VALUES
 (current_date()+1,"E45",current_time()-1,"ABIR",25,now());
+
+INSERT INTO sample_table
+VALUES
+(current_date()+3,"e344",current_time()+2,"dd",23,now());
 #these +k ,-n will shift you back and froth to those many days back or forward

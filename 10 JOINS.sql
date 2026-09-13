@@ -3,7 +3,7 @@
 
 #-**************************************** INNER JOIN / JOIN ****************************************************
 #INNER JOIN = AND / INTERSECTION / COMMON IN TWO OR BOTH
-#The INNER JOIN keyword returns only rows with a match in both tables only when when the related column set between tem satisfies the condition
+#The INNER JOIN keyword returns only rows with a match in both tables only when when the related column set between them satisfies the condition
 
 #THIS QUERRY WILL RETURNED A JOIN TABLE DISPLAYING ALL THOSE STUDENTS AND COURSE WHICH ARE BEING ALLOCATED TO ALTELAST ONE OF THE SUDENT
 SELECT * 
